@@ -1779,7 +1779,8 @@ struct PartNumFluc {
       }
     }
 
-    if (groupAnalysis.cfgFlagCalculationFluctuationCh.value) {
+    if (groupAnalysis.cfgFlagCalculationFluctuationCh.value)
+    {
       processSpecies.template operator()<ParticleSpecies::kPi>(groupTrack.cfgThresholdPtTofPi.value, PDG_t::kPiPlus, PDG_t::kPiMinus, holderEvent.nChP, holderEvent.nChM, fluctuationCalculatorTrackChP, fluctuationCalculatorTrackChM, fluctuationCalculatorTrackChT, fluctuationCalculatorTrackChN);
       processSpecies.template operator()<ParticleSpecies::kKa>(groupTrack.cfgThresholdPtTofKa.value, PDG_t::kKPlus, PDG_t::kKMinus, holderEvent.nChP, holderEvent.nChM, fluctuationCalculatorTrackChP, fluctuationCalculatorTrackChM, fluctuationCalculatorTrackChT, fluctuationCalculatorTrackChN);
       processSpecies.template operator()<ParticleSpecies::kPr>(groupTrack.cfgThresholdPtTofPr.value, PDG_t::kProton, PDG_t::kProtonBar, holderEvent.nChP, holderEvent.nChM, fluctuationCalculatorTrackChP, fluctuationCalculatorTrackChM, fluctuationCalculatorTrackChT, fluctuationCalculatorTrackChN);
